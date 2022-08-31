@@ -1,9 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Montserrat&family=Tajawal:wght@400;900&family=Tenor+Sans&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+body{
+    color:aliceblue ;
+}
 .flex-box{
     display: flex;
     flex-direction: row;
+    height: 80vh;
+    width: 90%;
+    margin:10vh auto;
+}
+.orange{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 2% 0 0 2%;
+    -webkit-border-radius: 2% 0 0 2%;
+    -moz-border-radius: 2% 0 0 2%;
+    -ms-border-radius: 2% 0 0 2%;
+    -o-border-radius: 2% 0 0 2%;
+}
+.cyan{
+    background-color: hsl(184, 100%, 22%);
+}
+.dark{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 2% 2% 0;
+    -webkit-border-radius: 0 2% 2% 0;
+    -moz-border-radius: 0 2% 2% 0;
+    -ms-border-radius: 0 2% 2% 0;
+    -o-border-radius: 0 2% 2% 0;
+}
+.card{
+    padding: 5% 5%;
+    margin:0 auto;
+}
+.card h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding: 5% 0;
+}
+.card p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2;
+    padding: 3% 0;
+}
+button{
+    padding: 5%;
+    margin-top: 15%;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    border-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.orange button{
+    color: hsl(31, 77%, 52%);
+}
+.cyan button{
+    color: hsl(184, 100%, 22%);
+}
+.dark button{
+    color: hsl(179, 100%, 13%);
 }
