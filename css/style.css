@@ -11,8 +11,16 @@ body{
     display: flex;
     flex-direction: row;
     height: 80vh;
-    width: 90%;
+    width: 80%;
     margin:10vh auto;
+}
+@media (max-width:414px){
+    .flex-box{
+        flex-direction: column;
+        margin:5vh auto;
+        height: auto;
+    }
+
 }
 .orange{
     background-color: hsl(31, 77%, 52%);
@@ -33,8 +41,25 @@ body{
     -ms-border-radius: 0 2% 2% 0;
     -o-border-radius: 0 2% 2% 0;
 }
+@media (max-width:414px){
+    .orange{
+        border-radius: 2% 2% 0 0;
+        -webkit-border-radius: 2% 2% 0 0;
+        -moz-border-radius: 2% 2% 0 0;
+        -ms-border-radius: 2% 2% 0 0;
+        -o-border-radius: 2% 2% 0 0;
+    }
+    .dark{
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0 2% 2%;
+        -webkit-border-radius: 0 0 2% 2%;
+        -moz-border-radius: 0 0 2% 2%;
+        -ms-border-radius: 0 0 2% 2%;
+        -o-border-radius: 0 0 2% 2%;
+    }
+}
 .card{
-    padding: 5% 5%;
+    padding: 5%;
     margin:0 auto;
 }
 .card h1{
@@ -48,6 +73,23 @@ body{
     font-size: 1.5rem;
     line-height: 2;
     padding: 3% 0;
+}
+@media (max-width:414px){
+    .card{
+        padding: 10%;
+        margin:0 auto;
+    }
+    .card svg{
+        margin: 2% 0;
+    }
+    .card h1{
+        font-size: 3.2rem;
+    }
+    .card p{
+        font-size: 1.2rem;
+        line-height: 1.4;
+        padding: 4% 0;
+    }
 }
 button{
     padding: 5%;
@@ -71,4 +113,10 @@ button{
 }
 .dark button{
     color: hsl(179, 100%, 13%);
+}
+@media (max-width:414px){
+    button{
+        margin:5% 0;
+        width: 65%;
+    }
 }
